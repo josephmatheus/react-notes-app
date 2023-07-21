@@ -20,15 +20,17 @@
 
 - Crie um novo componente chamado `NoteForm` que será responsável por adicionar novas anotações. ✔
 - No componente `NoteForm`, defina um estado local para armazenar o título e o conteúdo da nova anotação. ✔
-- Implemente um formulário com campos de entrada para o título e o conteúdo da anotação.
-- Adicione um manipulador de eventos para capturar as alterações nos campos de entrada e atualizar o estado local.
-- Adicione um botão de envio que, quando clicado, chamará uma função de manipulação de envio para adicionar a nova anotação ao estado global do `NotesApp`.
+- Implemente um formulário com campos de entrada para o título e o conteúdo da anotação. ✔
+- Adicione um manipulador de eventos para capturar as alterações nos campos de entrada e atualizar o estado local. ✔
+- Adicione um botão de envio que, quando clicado, chamará uma função de manipulação de envio para adicionar a nova anotação ao estado global do `NotesApp`. ✔
+
+Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 
 5. Exclusão de anotações:
 
-- No componente `NoteItem`, adicione um botão de exclusão ao lado de cada anotação.
-- Implemente um manipulador de eventos que será acionado quando o botão de exclusão for clicado.
-- O manipulador de eventos deve chamar uma função no componente `NotesApp` para remover a anotação correspondente do estado.
+- No componente `NoteItem`, adicione um botão de exclusão ao lado de cada anotação. ✔
+- Implemente um manipulador de eventos que será acionado quando o botão de exclusão for clicado. ✔
+- O manipulador de eventos deve chamar uma função no componente `NotesApp` para remover a anotação correspondente do estado. ✔
 
 6. Edição de anotações:
 
