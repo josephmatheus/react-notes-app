@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { NoteList } from "../NoteList/NoteList";
 import { NoteForm } from "../NoteForm/NoteForm";
 // import styles from "./notesApp.module.css";
@@ -6,21 +6,21 @@ import { NoteForm } from "../NoteForm/NoteForm";
 export const NotesApp = () => {
     const [notes, setNotes] = useState([]);
 
-    const handleAddNote = (newNote) => {
-        const teste = newNote
-        teste.id = notes.length + 1;
-        setNotes([...notes, teste])
+    const handleAddNote = (noteAdded) => {
+        const newNote = noteAdded
+        newNote.id = Math.floor(Date.now() * Math.random()).toString(36)
+        setNotes([...notes, newNote])
     }
 
-    useEffect(() => {
-        console.log(notes);
-    })
+    const handleDeleteNote = (id) => {
+        setNotes(notes.filter((note) => note.id !== id))
+    }
 
     return (
         <div>
             <p>{notes.length} notes</p>
-            <NoteList notes={notes} />
             <NoteForm onAddNote={handleAddNote} />
+            <NoteList notes={notes} onDeleteNote={handleDeleteNote} />
         </div>
     );
 }
