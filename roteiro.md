@@ -1,22 +1,22 @@
 1. Configuração inicial: ✔
 
-- Crie um novo projeto React usando `create-react-app` ou outra ferramenta de sua escolha.
-- Defina a estrutura básica do projeto, incluindo componentes principais, estilos e pastas para organizar o código.
+- Crie um novo projeto React usando `create-react-app` ou outra ferramenta de sua escolha. ✔
+- Defina a estrutura básica do projeto, incluindo componentes principais, estilos e pastas para organizar o código. ✔
 
-2. Criação do componente de Anotações:
+2. Criação do componente de Anotações: ✔
 
 - Crie um componente principal chamado `NotesApp` que servirá como o contêiner principal para o aplicativo. ✔
 - Dentro do componente `NotesApp`, defina o estado inicial para armazenar as anotações. O estado pode ser uma matriz de objetos, cada um representando uma anotação com propriedades como `id`, `title` e `content`. ✔
 - Renderize uma lista de anotações no componente `NotesApp` usando o estado atual. ✔
 
-3. Renderização das anotações:
+3. Renderização das anotações: ✔
 
 - Crie um novo componente chamado `NoteList` que será responsável por renderizar a lista de anotações. ✔
 - Passe o estado de anotações como prop para o componente `NoteList`. ✔
 - No componente `NoteList`, itere sobre o array de anotações e renderize cada uma delas em um componente separado chamado `NoteItem`. ✔
 - O componente `NoteItem` deve exibir o título e o conteúdo da anotação. ✔
 
-4. Adição de novas anotações:
+4. Adição de novas anotações: ✔
 
 - Crie um novo componente chamado `NoteForm` que será responsável por adicionar novas anotações. ✔
 - No componente `NoteForm`, defina um estado local para armazenar o título e o conteúdo da nova anotação. ✔
@@ -26,7 +26,7 @@
 
 Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 
-5. Exclusão de anotações:
+5. Exclusão de anotações: ✔
 
 - No componente `NoteItem`, adicione um botão de exclusão ao lado de cada anotação. ✔
 - Implemente um manipulador de eventos que será acionado quando o botão de exclusão for clicado. ✔
