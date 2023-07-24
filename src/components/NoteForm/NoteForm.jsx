@@ -24,7 +24,7 @@ export const NoteForm = ({ onAddNote }) => {
         className={styles.noteContent}
         placeholder="Anotação"
       />
-      <input type="submit" className={styles.noteSubmit} />
+      <button type="submit" className={styles.noteSubmit}>Salvar</button>
     </form>
   );
 };
