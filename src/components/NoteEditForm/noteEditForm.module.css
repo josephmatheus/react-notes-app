@@ -1,0 +1,20 @@
+.noteForm {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.noteTitle, .noteContent {
+    width: 100%;
+}
+
+.noteContent {
+    height: 100px;
+    resize: none;
+}
+
+.noteSubmit {
+    width: 100px;
+    align-self: center;
+}
