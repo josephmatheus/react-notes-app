@@ -32,7 +32,7 @@ Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 - Implemente um manipulador de eventos que será acionado quando o botão de exclusão for clicado. ✔
 - O manipulador de eventos deve chamar uma função no componente `NotesApp` para remover a anotação correspondente do estado. ✔
 
-6. Edição de anotações:
+6. Edição de anotações: ✔
 
 - No componente `NoteItem`, adicione um botão de edição ao lado de cada anotação. ✔
 - Implemente um manipulador de eventos que será acionado quando o botão de edição for clicado. ✔
