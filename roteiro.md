@@ -34,11 +34,11 @@ Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 
 6. Edição de anotações:
 
-- No componente `NoteItem`, adicione um botão de edição ao lado de cada anotação.
-- Implemente um manipulador de eventos que será acionado quando o botão de edição for clicado.
-- O manipulador de eventos deve chamar uma função no componente `NotesApp` para exibir um formulário de edição com os campos preenchidos com os dados da anotação correspondente.
-- No formulário de edição, os campos de entrada devem ser preenchidos com os dados da anotação selecionada.
-- Ao enviar o formulário de edição, atualize a anotação correspondente no estado global com os novos dados.
+- No componente `NoteItem`, adicione um botão de edição ao lado de cada anotação. ✔
+- Implemente um manipulador de eventos que será acionado quando o botão de edição for clicado. ✔
+- O manipulador de eventos deve chamar uma função no componente `NotesApp` para exibir um formulário de edição com os campos preenchidos com os dados da anotação correspondente. ✔
+- No formulário de edição, os campos de entrada devem ser preenchidos com os dados da anotação selecionada. ✔
+- Ao enviar o formulário de edição, atualize a anotação correspondente no estado global com os novos dados. ✔
 
 7. Estilização e melhorias visuais:
 
