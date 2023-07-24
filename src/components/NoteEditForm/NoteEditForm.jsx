@@ -1,4 +1,5 @@
 import { useForm } from "react-hook-form";
+import styles from "./noteEditForm.module.css";
 
 export const NoteEditForm = ({ note, onSubmit }) => {
   const { register, handleSubmit, reset } = useForm();
@@ -10,10 +11,10 @@ export const NoteEditForm = ({ note, onSubmit }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(handleFormSubmit)} className="noteForm">
-      <input {...register("title")} defaultValue={note.title} />
-      <textarea {...register("content")} defaultValue={note.content} />
-      <button type="submit">Salvar</button>
+    <form onSubmit={handleSubmit(handleFormSubmit)} className={styles.noteForm}>
+      <input {...register("title")} defaultValue={note.title} placeholder="Título" className={styles.noteTitle} />
+      <textarea {...register("content")} defaultValue={note.content} placeholder="Anotação" className={styles.noteContent} />
+      <button type="submit" className={styles.noteSubmit}>Salvar</button>
     </form>
   );
 };
