@@ -8,10 +8,10 @@ export const NotesApp = () => {
   const [notes, setNotes] = useState([]);
   const [editingNote, setEditingNote] = useState(null);
   const [showForm, setShowForm] = useState(false);
-  
+
   const handleAddNote = () => {
-    setShowForm(true)
-  }
+    setShowForm(true);
+  };
 
   const handleSaveNote = (noteAdded) => {
     const newNote = noteAdded;
@@ -38,12 +38,8 @@ export const NotesApp = () => {
   return (
     <div>
       <p>{notes.length} notes</p>
-      {!showForm && (
-        <button onClick={handleAddNote}>Adicionar</button>
-      )}
-      {showForm && (
-        <NoteForm onAddNote={handleSaveNote} />
-      )}
+      {!showForm && <button onClick={handleAddNote}>Adicionar</button>}
+      {showForm && <NoteForm onAddNote={handleSaveNote} />}
       <NoteList
         notes={notes}
         onDeleteNote={handleDeleteNote}
