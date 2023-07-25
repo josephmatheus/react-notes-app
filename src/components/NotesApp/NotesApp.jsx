@@ -7,11 +7,17 @@ import { NoteEditForm } from "../NoteEditForm/NoteEditForm";
 export const NotesApp = () => {
   const [notes, setNotes] = useState([]);
   const [editingNote, setEditingNote] = useState(null);
+  const [showForm, setShowForm] = useState(false);
+  
+  const handleAddNote = () => {
+    setShowForm(true)
+  }
 
-  const handleAddNote = (noteAdded) => {
+  const handleSaveNote = (noteAdded) => {
     const newNote = noteAdded;
     newNote.id = Math.floor(Date.now() * Math.random()).toString(36);
     setNotes([...notes, newNote]);
+    setShowForm(false);
   };
 
   const handleDeleteNote = (id) => {
@@ -32,7 +38,12 @@ export const NotesApp = () => {
   return (
     <div>
       <p>{notes.length} notes</p>
-      <NoteForm onAddNote={handleAddNote} />
+      {!showForm && (
+        <button onClick={handleAddNote}>Adicionar</button>
+      )}
+      {showForm && (
+        <NoteForm onAddNote={handleSaveNote} />
+      )}
       <NoteList
         notes={notes}
         onDeleteNote={handleDeleteNote}
