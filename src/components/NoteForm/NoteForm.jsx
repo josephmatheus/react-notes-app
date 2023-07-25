@@ -9,22 +9,32 @@ export const NoteForm = ({ onAddNote }) => {
     reset({
       title: "",
       content: "",
-    })
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className={styles.noteForm}>
-      <input
-        {...register("title")}
-        className={styles.noteTitle}
-        placeholder="Título"
-      />
-      <textarea
-        {...register("content")}
-        className={styles.noteContent}
-        placeholder="Anotação"
-      />
-      <button type="submit" className={styles.noteSubmit}>Salvar</button>
-    </form>
+    <div className={styles.formContainer}>
+      <form onSubmit={handleSubmit(onSubmit)} className={styles.noteForm}>
+        <div className={styles.formGroup}>
+          <label htmlFor="title">Título</label>
+          <input
+            {...register("title")}
+            className={styles.noteTitle}
+            name="title"
+          />
+        </div>
+        <div className={styles.formGroup}>
+          <label htmlFor="content">Anotação</label>
+        <textarea
+          {...register("content")}
+          className={styles.noteContent}
+          name="content"
+        />
+        </div>
+        <button type="submit" className={styles.noteSubmit}>
+          Salvar
+        </button>
+      </form>
+    </div>
   );
 };

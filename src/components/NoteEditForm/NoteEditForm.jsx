@@ -11,10 +11,28 @@ export const NoteEditForm = ({ note, onSubmit }) => {
   };
 
   return (
+    <div className={styles.formContainer}>
     <form onSubmit={handleSubmit(handleFormSubmit)} className={styles.noteForm}>
-      <input {...register("title")} defaultValue={note.title} placeholder="Título" className={styles.noteTitle} />
-      <textarea {...register("content")} defaultValue={note.content} placeholder="Anotação" className={styles.noteContent} />
-      <button type="submit" className={styles.noteSubmit}>Salvar</button>
+      <div className={styles.formGroup}>
+      <input
+        {...register("title")}
+        defaultValue={note.title}
+        placeholder="Título"
+        className={styles.noteTitle}
+      />
+    </div>
+    <div className={styles.formGroup}>
+      <textarea
+        {...register("content")}
+        defaultValue={note.content}
+        placeholder="Anotação"
+        className={styles.noteContent}
+      />
+    </div>
+      <button type="submit" className={styles.noteSubmit}>
+        Salvar
+      </button>
     </form>
+    </div>
   );
 };
