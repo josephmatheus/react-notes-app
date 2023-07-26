@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NoteList } from "../NoteList/NoteList";
 import { NoteForm } from "../NoteForm/NoteForm";
 import { NoteEditForm } from "../NoteEditForm/NoteEditForm";
-// import styles from "./notesApp.module.css";
+import styles from "./notesApp.module.css";
 
 export const NotesApp = () => {
   const [notes, setNotes] = useState([]);
@@ -36,9 +36,11 @@ export const NotesApp = () => {
   };
 
   return (
-    <div>
-      <p>{notes.length} notes</p>
-      {!showForm && <button onClick={handleAddNote}>Adicionar</button>}
+    <div className={styles.container}>
+      <div className={styles.notesLengthContainer}>
+        <p>{notes.length <= 1  ? `${notes.length} nota` : `${notes.length} notas`}</p>
+        <button onClick={handleAddNote} className={styles.addNoteBtn} role="button">Adicionar</button>
+      </div>
       {showForm && <NoteForm onAddNote={handleSaveNote} />}
       <NoteList
         notes={notes}
