@@ -42,9 +42,9 @@ Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 
 7. Estilização e melhorias visuais:
 
-- Adicione estilos CSS ao seu aplicativo de anotações para torná-lo mais atraente e usável.
-- Considere o uso de uma biblioteca de componentes estilizados, como `styled-components` ou `Material-UI`, para facilitar a estilização.
-- Adicione animações e transições suaves para melhorar a experiência do usuário ao adicionar, editar ou excluir anotações.
+- Adicione estilos CSS ao seu aplicativo de anotações para torná-lo mais atraente e usável. ✔
+- Considere o uso de uma biblioteca de componentes estilizados, como `styled-components` ou `Material-UI`, para facilitar a estilização. ❌
+- Adicione animações e transições suaves para melhorar a experiência do usuário ao adicionar, editar ou excluir anotações. ⏳
 
 8. Funcionalidades adicionais (opcional):
 
