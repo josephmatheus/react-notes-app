@@ -39,7 +39,7 @@ export const NotesApp = () => {
     <div className={styles.container}>
       <div className={styles.notesLengthContainer}>
         <p>{notes.length <= 1  ? `${notes.length} nota` : `${notes.length} notas`}</p>
-        <button onClick={handleAddNote} className={styles.addNoteBtn} role="button">Adicionar</button>
+        <button onClick={handleAddNote} className={styles.addNoteBtn} >Adicionar</button>
       </div>
       {showForm && <NoteForm onAddNote={handleSaveNote} />}
       <NoteList
