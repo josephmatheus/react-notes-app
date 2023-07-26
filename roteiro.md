@@ -40,7 +40,7 @@ Obs.: Os três últimos pontos foram substituídos pelo hook `react-hook-form`
 - No formulário de edição, os campos de entrada devem ser preenchidos com os dados da anotação selecionada. ✔
 - Ao enviar o formulário de edição, atualize a anotação correspondente no estado global com os novos dados. ✔
 
-7. Estilização e melhorias visuais:
+7. Estilização e melhorias visuais: ✔
 
 - Adicione estilos CSS ao seu aplicativo de anotações para torná-lo mais atraente e usável. ✔
 - Considere o uso de uma biblioteca de componentes estilizados, como `styled-components` ou `Material-UI`, para facilitar a estilização. ❌
