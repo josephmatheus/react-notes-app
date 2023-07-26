@@ -21,6 +21,7 @@ export const NoteForm = ({ onAddNote }) => {
             {...register("title")}
             className={styles.noteTitle}
             name="title"
+            maxLength={60}
           />
         </div>
         <div className={styles.formGroup}>
@@ -29,6 +30,7 @@ export const NoteForm = ({ onAddNote }) => {
           {...register("content")}
           className={styles.noteContent}
           name="content"
+          maxLength={180}
         />
         </div>
         <button type="submit" className={styles.noteSubmit}>

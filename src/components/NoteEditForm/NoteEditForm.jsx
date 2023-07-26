@@ -19,6 +19,7 @@ export const NoteEditForm = ({ note, onSubmit }) => {
         defaultValue={note.title}
         placeholder="Título"
         className={styles.noteTitle}
+        maxLength={60}
       />
     </div>
     <div className={styles.formGroup}>
@@ -27,6 +28,7 @@ export const NoteEditForm = ({ note, onSubmit }) => {
         defaultValue={note.content}
         placeholder="Anotação"
         className={styles.noteContent}
+        maxLength={180}
       />
     </div>
       <button type="submit" className={styles.noteSubmit}>
