@@ -4,7 +4,6 @@ import styles from "./noteForm.module.css";
 export const NoteForm = ({ onAddNote }) => {
   const { register, handleSubmit, reset } = useForm();
   const onSubmit = (data) => {
-    // console.log(data);
     onAddNote(data);
     reset({
       title: "",
