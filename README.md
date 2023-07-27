@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Notes App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação simples para gerenciar anotações de forma fácil e intuitiva. Permitindo que usuários possam criar, visualizar, editar e excluir anotações de forma fácil e rápida.
 
-## Available Scripts
+## Imagem do Projeto 🖼
 
-In the project directory, you can run:
+![Project Screenshot](./src/images/Screenshot_1.png)
 
-### `npm start`
+## Tecnologias utilizadas 🛠
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- JSX
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades 📃
 
-### `npm test`
+- Adicionar anotação: Os usuários podem criar novas anotações, fornecendo um título e conteúdo.
+- Visualizar anotações: Todas as anotações são exibidas em uma lista, onde os usuários podem ver o título e conteúdo de cada uma.
+- Editar anotação: Ao clicar no botão de edição em uma anotação, os usuários podem alterar o título e conteúdo da anotação selecionada.
+- Excluir anotação: Os usuários podem remover uma anotação da lista ao clicar no botão de exclusão correspondente.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Como usar 📋
 
-### `npm run build`
+1. Clone o repositório: git clone <https://github.com/josephmatheus/react-notes-app.git>
+2. Navegue até o diretório do projeto: `cd notes-app`
+3. Instale as dependências: `npm install`
+4. Inicie a aplicação: `npm start`
+5. Acesse a aplicação no seu navegador: <http://localhost:3000>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Estrutura do projeto 🧬
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- src
+  - components: Contém os componentes React utilizados na aplicação.
+    - NoteForm: Formulário para adicionar novas anotações.
+    - NoteList: Lista de anotações existentes.
+    - NoteItem: Item individual da lista de anotações.
+    - NoteEditForm: Formulário para editar uma anotação existente.
+  - App.jsx: Componente raiz da aplicação.
+  - index.jsx: Ponto de entrada da aplicação.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribuição 🤝
 
-### `npm run eject`
+**Contribuições são bem-vindas!**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sinta-se à vontade para abrir uma _issue_ ou enviar um _pull request_.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Algumas Sugestões (que também são o que penso implementar):
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Implementar pesquisa de anotações por título ou conteúdo.
+- Adicionar filtros ou categorias para organizar as anotações em diferentes grupos.
+- Adicionar uma funcionalidade de marcação para destacar anotações importantes ou concluídas.
+- Explorar outras melhorias e recursos que você achar relevantes para o Notes App.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Licença 📝
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este projeto está licenciado sob a [**MIT License**](./LICENSE.md).
